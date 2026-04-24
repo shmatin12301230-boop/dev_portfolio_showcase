@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RelayDesk Portal - Сервисы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div class="hero-top">
+          <a href="../../index.html">Назад на главную</a>
+          <a href="./index.html">Открыть портал</a>
+        </div>
+        <h1>Сервисы RelayDesk</h1>
+        <p>
+          Отдельная страница сервисов для клиентского портала: подключение
+          модулей, SLA-симулятор, управление очередью и выгрузка отчётов.
+        </p>
+      </header>
+
+      <section class="modules-grid">
+        <article class="module-card">
+          <img src="../../assets/previews/signalboard-card.svg" alt="SLA мониторинг" loading="lazy" />
+          <span class="eyebrow">Модуль 01</span>
+          <h2>SLA Monitor</h2>
+          <p>Отслеживание скорости реакции, просрочек и нагрузки в реальном времени.</p>
+          <button class="module-btn" type="button">Подключить модуль</button>
+        </article>
+        <article class="module-card">
+          <img src="../../assets/previews/relaydesk-card.svg" alt="Очередь задач" loading="lazy" />
+          <span class="eyebrow">Модуль 02</span>
+          <h2>Queue Control</h2>
+          <p>Распределение задач по приоритетам, статусам и ответственным операторам.</p>
+          <button class="module-btn" type="button">Подключить модуль</button>
+        </article>
+        <article class="module-card">
+          <img src="../../assets/previews/lunex-card.svg" alt="Отчётность" loading="lazy" />
+          <span class="eyebrow">Модуль 03</span>
+          <h2>Client Reports</h2>
+          <p>Автоматическая выгрузка отчётов в CSV/PDF для команды и клиентов.</p>
+          <button class="module-btn" type="button">Подключить модуль</button>
+        </article>
+      </section>
+
+      <section class="tools-grid">
+        <article class="tool-card">
+          <span class="eyebrow">SLA Симулятор</span>
+          <h2>Проверь нагрузку команды</h2>
+          <label class="field">
+            <span>Заявок в день</span>
+            <input id="tickets" type="range" min="20" max="260" value="110" />
+            <strong id="tickets-value">110 заявок</strong>
+          </label>
+          <label class="field">
+            <span>Операторов в смене</span>
+            <input id="operators" type="range" min="2" max="14" value="6" />
+            <strong id="operators-value">6 операторов</strong>
+          </label>
+          <label class="field">
+            <span>Доля приоритетных заявок</span>
+            <select id="priority-mix">
+              <option value="0.8">Низкая (до 15%)</option>
+              <option value="1">Средняя (15-30%)</option>
+              <option value="1.25">Высокая (30%+)</option>
+            </select>
+          </label>
+          <div class="kpi-box">
+            <div><span>Средний ответ</span><strong id="avg-response">11 мин</strong></div>
+            <div><span>Риск просрочек</span><strong id="sla-risk">Низкий</strong></div>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <span class="eyebrow">Управление очередью</span>
+          <h2>Управление очередью</h2>
+          <div class="queue-filters">
+            <button class="filter-btn active" type="button" data-filter="all">Все</button>
+            <button class="filter-btn" type="button" data-filter="hot">Критичные</button>
+            <button class="filter-btn" type="button" data-filter="waiting">Ожидание</button>
+            <button class="filter-btn" type="button" data-filter="done">Готово</button>
+          </div>
+          <ul id="queue-list" class="queue-list">
+            <li data-state="hot"><span>Заявка #214 / Таймаут API</span><button type="button" class="task-btn">В работу</button></li>
+            <li data-state="waiting"><span>Заявка #227 / Доступы клиента</span><button type="button" class="task-btn">В работу</button></li>
+            <li data-state="hot"><span>Заявка #231 / Ошибка оплаты</span><button type="button" class="task-btn">В работу</button></li>
+            <li data-state="done"><span>Заявка #205 / Ошибка синхронизации CRM</span><button type="button" class="task-btn">Готово</button></li>
+            <li data-state="waiting"><span>Заявка #239 / Доработка виджета</span><button type="button" class="task-btn">В работу</button></li>
+          </ul>
+          <p id="queue-meta" class="queue-meta">Отображается задач: 5</p>
+        </article>
+      </section>
+
+      <section class="exports">
+        <article class="export-card">
+          <span class="eyebrow">Конструктор отчёта</span>
+          <h2>Сформируй отчёт</h2>
+          <div class="checks">
+            <label><input type="checkbox" checked /> Показатели по SLA</label>
+            <label><input type="checkbox" checked /> Воронка обращений</label>
+            <label><input type="checkbox" /> Тепловая карта операторов</label>
+            <label><input type="checkbox" /> Динамика бэклога</label>
+          </div>
+          <button id="build-report" class="build-btn" type="button">Сформировать отчёт</button>
+          <p id="report-status" class="report-status"></p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./services.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Launch - Услуги</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero-top">
+          <a href="../../index.html">Назад на главную</a>
+          <a href="./index.html">Открыть проект</a>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Сервисы Atelier Launch</p>
+          <h1>Услуги и пакеты</h1>
+          <p>
+            Полноценная страница услуг с визуальным направлением, пакетами и
+            интерактивной оценкой запуска под задачу клиента.
+          </p>
+        </div>
+      </header>
+
+      <section class="services-grid">
+        <article class="service-card">
+          <img src="../../assets/previews/atelier-card.svg" alt="Брендовый лендинг" loading="lazy" />
+          <span class="eyebrow">Пакет 01</span>
+          <h2>Brand Story</h2>
+          <p>Лендинг с упором на позиционирование, нарратив и визуальный тон.</p>
+          <button class="select-package active" type="button" data-name="Brand Story" data-base="2400">
+            Выбрать пакет
+          </button>
+        </article>
+        <article class="service-card">
+          <img src="../../assets/previews/neuroflow-card.svg" alt="Запуск продукта" loading="lazy" />
+          <span class="eyebrow">Пакет 02</span>
+          <h2>Launch Campaign</h2>
+          <p>Страница запуска продукта с блоками продаж, оффером и продуманным лид-потоком.</p>
+          <button class="select-package" type="button" data-name="Launch Campaign" data-base="3200">
+            Выбрать пакет
+          </button>
+        </article>
+        <article class="service-card">
+          <img src="../../assets/previews/relaydesk-card.svg" alt="Сайт студии" loading="lazy" />
+          <span class="eyebrow">Пакет 03</span>
+          <h2>Studio Presence</h2>
+          <p>Многостраничная витрина студии с кейсами, услугами и структурой продаж.</p>
+          <button class="select-package" type="button" data-name="Studio Presence" data-base="4100">
+            Выбрать пакет
+          </button>
+        </article>
+      </section>
+
+      <section class="toolkit">
+        <article class="tool-card">
+          <span class="eyebrow">Калькулятор</span>
+          <h2>Предварительная оценка</h2>
+
+          <label class="field">
+            <span>Срочность</span>
+            <select id="timeline">
+              <option value="1">Стандартный запуск (2-3 недели)</option>
+              <option value="1.25">Ускоренный запуск (7-10 дней)</option>
+              <option value="1.45">Спринт запуск (3-5 дней)</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Количество экранов</span>
+            <input id="pages" type="range" min="3" max="16" value="7" />
+            <strong id="pages-value">7 экранов</strong>
+          </label>
+
+          <div class="addons">
+            <label><input type="checkbox" data-addon-price="450" /> Анимации и настройка динамики</label>
+            <label><input type="checkbox" data-addon-price="380" /> Копирайт-блоки под продажи</label>
+            <label><input type="checkbox" data-addon-price="520" /> Подготовка контента и визуалов</label>
+            <label><input type="checkbox" data-addon-price="290" /> Подключение аналитики и событий</label>
+          </div>
+
+          <button id="reset-estimate" class="ghost-btn" type="button">Сбросить расчёт</button>
+        </article>
+
+        <article class="tool-card summary-card">
+          <span class="eyebrow">Сводка</span>
+          <h2 id="selected-package-name">Brand Story</h2>
+          <ul>
+            <li><span>Базовый пакет</span><strong id="base-price">$2400</strong></li>
+            <li><span>Экранов</span><strong id="screen-price">$1540</strong></li>
+            <li><span>Дополнения</span><strong id="addons-price">$0</strong></li>
+            <li><span>Коэффициент запуска</span><strong id="timeline-value">x1.00</strong></li>
+          </ul>
+          <div class="total">
+            <span>Итого ориентировочно</span>
+            <strong id="total-price">$3940</strong>
+          </div>
+          <p>Точная стоимость и сроки фиксируются после брифа и согласования структуры.</p>
+        </article>
+      </section>
+
+      <section class="style-lab">
+        <div class="lab-head">
+          <span class="eyebrow">Лаборатория стиля</span>
+          <h2>Проверь визуальное направление</h2>
+        </div>
+        <div class="style-controls">
+          <button class="style-btn active" type="button" data-style="editorial">Редакционный</button>
+          <button class="style-btn" type="button" data-style="cinematic">Кинематографичный</button>
+          <button class="style-btn" type="button" data-style="minimal">Минималистичный</button>
+        </div>
+        <article id="style-preview" class="style-preview editorial">
+          <h3 id="style-title">Редакционный</h3>
+          <p id="style-description">
+            Редакционный стиль с крупной типографикой и выразительной иерархией блоков.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./services.js"></script>
+  </body>
+  </html>

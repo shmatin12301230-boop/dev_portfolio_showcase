@@ -1,0 +1,25 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#251A12"/>
+      <stop offset="1" stop-color="#1A161E"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(874 220) rotate(90) scale(220 220)">
+      <stop stop-color="#FFD07D"/>
+      <stop offset="1" stop-color="#FFD07D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <rect x="78" y="80" width="1044" height="560" rx="30" fill="#251D17" stroke="#5A4533"/>
+  <rect x="118" y="118" width="966" height="94" rx="20" fill="#31261D"/>
+  <rect x="118" y="238" width="472" height="362" rx="24" fill="#31261E"/>
+  <rect x="614" y="238" width="470" height="170" rx="24" fill="#31261E"/>
+  <rect x="614" y="430" width="470" height="170" rx="24" fill="#31261E"/>
+  <circle cx="874" cy="220" r="220" fill="url(#light)"/>
+  <rect x="152" y="282" width="206" height="274" rx="20" fill="#3A2D22"/>
+  <rect x="382" y="282" width="174" height="274" rx="20" fill="#3A2D22"/>
+  <rect x="648" y="282" width="402" height="46" rx="12" fill="#463728"/>
+  <rect x="648" y="348" width="330" height="34" rx="10" fill="#413325"/>
+  <rect x="648" y="472" width="402" height="46" rx="12" fill="#463728"/>
+  <rect x="648" y="538" width="290" height="34" rx="10" fill="#413325"/>
+</svg>

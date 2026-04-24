@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Илья - Full-Stack разработчик</title>
+    <meta
+      name="description"
+      content="Илья: сайты, боты, дашборды и автоматизация для бизнеса. Разработка с фокусом на результат и понятную продуктовую логику."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#top">Портфолио</a>
+        <nav class="topnav">
+          <a href="#about">Обо мне</a>
+          <a href="#bot">Бот</a>
+          <a href="#projects">Проекты</a>
+          <a href="#services">Подход</a>
+          <a href="#process">Процесс</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="RU EN">
+          <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="intro-banner">
+          <div class="intro-copy">
+            <span class="eyebrow">Коротко обо мне</span>
+            <h2>Привет, я Илья.</h2>
+            <p>
+              Full-Stack разработчик. Проектирую и собираю сайты, ботов и рабочие интерфейсы
+              для задач бизнеса: от первой идеи до запуска.
+            </p>
+          </div>
+          <div class="intro-actions">
+            <a class="button button-primary" href="#about">Подробнее обо мне</a>
+            <a class="button button-secondary" href="#projects">К проектам</a>
+          </div>
+        </section>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">Илья • Сайты • Боты • Автоматизация</span>
+            <h1 class="hero-title">
+              Разрабатываю сайты и ботов для реальных задач бизнеса.
+            </h1>
+            <p class="hero-text">
+              Берусь за лендинги, клиентские кабинеты, Telegram-ботов и дашборды.
+              Делаю аккуратно, с понятной структурой и логикой.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Смотреть проекты</a>
+              <a class="button button-secondary" href="#bot">Потестировать бота</a>
+            </div>
+            <div class="metrics-grid">
+              <article>
+                <strong data-counter="5">0</strong>
+                <span>проектных направлений в активной разработке</span>
+              </article>
+              <article>
+                <strong data-counter="5">0</strong>
+                <span>разных форматов: боты, сайты, панели, сервисы</span>
+              </article>
+              <article>
+                <strong data-counter="72">0</strong>
+                <span>часа в среднем занимает запуск первой рабочей версии</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="window-panel">
+              <div class="window-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="hero-board">
+                <div class="board-card board-large">
+                  <span class="card-label">Формат работы</span>
+                  <h2>Понятная подача без перегруза</h2>
+                  <p>
+                    Интерфейсы без лишнего шума: чтобы человек сразу понимал,
+                    что где находится и какой следующий шаг.
+                  </p>
+                  <div class="board-tags">
+                    <span>Telegram-боты</span>
+                    <span>Лидогенерация</span>
+                    <span>Дашборды</span>
+                    <span>UI-системы</span>
+                  </div>
+                </div>
+                <div class="board-row">
+                  <div class="board-card">
+                    <span class="card-label">Подход</span>
+                    <strong>Практично и по делу</strong>
+                    <p>Фокус на результате, удобстве и понятном пользовательском пути.</p>
+                  </div>
+                  <div class="board-card accent">
+                    <span class="card-label">Результат</span>
+                    <strong>Понимание с первого экрана</strong>
+                    <p>Страницу удобно открыть, показать и использовать в реальной работе.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-heading">
+            <span class="eyebrow">Обо мне</span>
+            <h2>Разработчик, который доводит проект от идеи до запуска</h2>
+          </div>
+          <div class="about-grid">
+            <article class="about-card about-main">
+              <h3>Илья, разработчик интерфейсов и автоматизации</h3>
+              <p>
+                Делаю лендинги, сервисы, Telegram-ботов и внутренние панели.
+                В работе важны смысл, структура и удобство для пользователя.
+              </p>
+              <p class="about-placeholder">
+                Работаю короткими итерациями: быстро показываю рабочую версию,
+                собираю обратную связь и довожу до уверенного результата.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3>Мой стек</h3>
+              <ul class="about-list">
+                <li>HTML, CSS, JavaScript, адаптивная вёрстка</li>
+                <li>UI/UX, дизайн-системы, лендинги под конверсию</li>
+                <li>Боты, автоматизация, интеграции и MVP-интерфейсы</li>
+              </ul>
+            </article>
+            <article class="about-card">
+              <h3>Формат работы</h3>
+              <ul class="about-list">
+                <li>Быстрый старт с короткого брифа</li>
+                <li>Понятные этапы и промежуточные релизы</li>
+                <li>Результат, который не стыдно показать клиенту</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="bot">
+          <div class="section-heading">
+            <span class="eyebrow">Интерактив</span>
+            <h2>Telegram-бот прямо на сайте</h2>
+          </div>
+          <div class="bot-demo">
+            <article class="bot-instructions">
+              <h3>Команды для быстрой проверки</h3>
+              <p>
+                Нажимай команды или вводи их вручную. Встроены режимы
+                продаж и поддержки.
+              </p>
+              <div class="command-chips">
+                <button class="command-chip" type="button" data-command="/start">/start</button>
+                <button class="command-chip" type="button" data-command="/help">/help</button>
+                <button class="command-chip" type="button" data-command="/services">/services</button>
+                <button class="command-chip" type="button" data-command="/price">/price</button>
+                <button class="command-chip" type="button" data-command="/contact">/contact</button>
+                <button class="command-chip" type="button" data-command="/status">/status</button>
+                <button class="command-chip" type="button" data-command="/bug">/bug</button>
+              </div>
+              <p class="bot-tip">
+                Также работает свободный ввод, например: «нужен бот для лидов»
+                или «хочу сайт под запуск».
+              </p>
+            </article>
+            <article class="bot-console">
+              <div class="bot-console-head">
+                <div>
+                  <strong>NeuroFlow Bot</strong>
+                  <span class="bot-online">online</span>
+                </div>
+                <div class="bot-mode-switch">
+                  <button class="mode-chip active" type="button" data-mode="sales">Продажи</button>
+                  <button class="mode-chip" type="button" data-mode="support">Поддержка</button>
+                </div>
+              </div>
+              <div id="bot-log" class="bot-log" aria-live="polite"></div>
+              <form id="bot-form" class="bot-form">
+                <input
+                  id="bot-input"
+                  type="text"
+                  placeholder="Введите команду или сообщение..."
+                  autocomplete="off"
+                />
+                <button class="button button-primary" type="submit">Отправить</button>
+              </form>
+              <form id="lead-form" class="lead-form">
+                <input id="lead-name" type="text" placeholder="Имя" />
+                <input id="lead-contact" type="text" placeholder="Контакт (Telegram / Email)" />
+                <textarea
+                  id="lead-task"
+                  rows="3"
+                  placeholder="Коротко: какая задача и что нужно сделать"
+                ></textarea>
+                <button class="button button-secondary lead-submit" type="submit">
+                  Сохранить заявку
+                </button>
+              </form>
+              <p id="lead-status" class="lead-status"></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <span class="eyebrow">Проекты</span>
+            <h2>Проекты из разных направлений: боты, сервисы и продуктовые сайты</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-preview preview-bot">
+                <img src="./assets/previews/neuroflow-card.svg" alt="Превью проекта NeuroFlow Bot" loading="lazy" />
+              </div>
+              <div class="project-meta">
+                <span class="project-type">Бот-платформа</span>
+                <h3>NeuroFlow Bot</h3>
+                <p>
+                  Telegram-бот для захвата лидов, квалификации заявок и
+                  маршрутизации в воронку с подачей под SaaS-продукт или клиентский кейс.
+                </p>
+                <ul>
+                  <li>Сценарий: лидогенерация и авто-квалификация</li>
+                  <li>Подходит для: агентств, отделов продаж и небольших команд</li>
+                  <li>Формат: интерактивный рабочий интерфейс</li>
+                </ul>
+                <a href="./projects/neuroflow-bot/index.html">Открыть проект</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-dashboard">
+                <img src="./assets/previews/signalboard-card.svg" alt="Превью проекта SignalBoard" loading="lazy" />
+              </div>
+              <div class="project-meta">
+                <span class="project-type">Аналитический сервис</span>
+                <h3>SignalBoard</h3>
+                <p>
+                  Панель мониторинга для кампаний, нагрузки операторов, статусов
+                  воронки и принятия решений по сигналам и алертам.
+                </p>
+                <ul>
+                  <li>Сценарий: SaaS-админка или внутренний инструмент</li>
+                  <li>Подходит для: внутренних команд и сервисов с метриками</li>
+                  <li>Формат: насыщенный интерфейс с данными</li>
+                </ul>
+                <a href="./projects/signalboard-dashboard/index.html">Открыть проект</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-atelier">
+                <img src="./assets/previews/atelier-card.svg" alt="Превью проекта Atelier Launch" loading="lazy" />
+              </div>
+              <div class="project-meta">
+                <span class="project-type">Промо-сайт</span>
+                <h3>Atelier Launch</h3>
+                <p>
+                  Атмосферный лендинг для студии или дорогого специалиста с
+                  упором на вкус, уверенность и визуальную подачу.
+                </p>
+                <ul>
+                  <li>Сценарий: клиентский сайт или домашняя страница студии</li>
+                  <li>Подходит для: экспертов, студий и небольших брендов</li>
+                  <li>Формат: статичная презентация с атмосферой</li>
+                </ul>
+                <a href="./projects/atelier-launch/index.html">Открыть проект</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-relay">
+                <img src="./assets/previews/relaydesk-card.svg" alt="Превью проекта RelayDesk Portal" loading="lazy" />
+              </div>
+              <div class="project-meta">
+                <span class="project-type">Клиентский портал</span>
+                <h3>RelayDesk Portal</h3>
+                <p>
+                  Кабинет для клиентов и команды: статусы задач, этапы запуска,
+                  комментарии, счётчики прогресса и общая картина проекта.
+                </p>
+                <ul>
+                  <li>Сценарий: CRM, клиентский кабинет, сервис-панель</li>
+                  <li>Подходит для: агентств и проектных команд</li>
+                  <li>Формат: аккуратный операционный интерфейс</li>
+                </ul>
+                <a href="./projects/relaydesk-portal/index.html">Открыть проект</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-lunex">
+                <img src="./assets/previews/lunex-card.svg" alt="Превью проекта Lunex Storefront" loading="lazy" />
+              </div>
+              <div class="project-meta">
+                <span class="project-type">E-commerce витрина</span>
+                <h3>Lunex Storefront</h3>
+                <p>
+                  Премиальная продуктовая страница для digital-товара, курса или
+                  tech-бренда с подачей под сильную конверсию и современный визуал.
+                </p>
+                <ul>
+                  <li>Сценарий: запуск продукта, инфопродукт, digital shop</li>
+                  <li>Подходит для: digital-продуктов, курсов и подписок</li>
+                  <li>Формат: продающий лендинг с карточками и оффером</li>
+                </ul>
+                <a href="./projects/lunex-storefront/index.html">Открыть проект</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section strategy-section" id="services">
+          <div class="section-heading">
+            <span class="eyebrow">Подход и процесс</span>
+            <h2>Рабочий процесс без лишней бюрократии</h2>
+            <p>
+              Сначала определяем задачу, потом собираем структуру и визуал,
+              после чего запускаем рабочую версию и улучшаем по факту использования.
+            </p>
+          </div>
+          <div class="split-grid">
+            <div class="info-card">
+              <h3>Визуальная подача с характером</h3>
+              <p>
+                Чёткая иерархия и аккуратный визуал помогают быстро донести суть,
+                а не перегружать человека лишними деталями.
+              </p>
+            </div>
+            <div class="info-card">
+              <h3>Продуктовая логика внутри</h3>
+              <p>
+                В каждом проекте продуман путь пользователя: состояния, точки решения
+                и понятные действия на каждом шаге.
+              </p>
+            </div>
+            <div class="info-card">
+              <h3>Быстрый релиз без компромиссов</h3>
+              <p>
+                Сначала выпускаем основу, затем добавляем нужные модули,
+                интеграции и улучшения.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section process-section" id="process">
+          <div class="section-heading">
+            <span class="eyebrow">Этапы запуска</span>
+            <h2>От идеи до запуска: понятный и прозрачный путь</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>01</span>
+              <h3>Фиксируем цель и сценарий</h3>
+              <p>Разбираем задачу, аудиторию и ожидаемый результат.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Собираем архитектуру и визуал</h3>
+              <p>Проектируем структуру, контентные блоки и ключевые экраны.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Релизим и масштабируем</h3>
+              <p>Запускаем проект, собираем обратную связь и развиваем дальше.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-card" id="contact">
+          <span class="eyebrow">Сотрудничество</span>
+          <h2>Если нужна помощь с проектом — давай обсудим задачу</h2>
+          <p>
+            Работаю прозрачно: короткий бриф, понятные этапы, регулярные обновления
+            и результат, который можно сразу использовать.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="#bot">Оставить заявку</a>
+            <a class="button button-secondary" href="#projects">Посмотреть проекты</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+  </html>

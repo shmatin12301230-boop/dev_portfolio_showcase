@@ -1,0 +1,23 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A1712"/>
+      <stop offset="1" stop-color="#1A1525"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(830 212) rotate(90) scale(220 220)">
+      <stop stop-color="#FFC58D"/>
+      <stop offset="1" stop-color="#FFC58D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <rect x="86" y="86" width="1028" height="548" rx="36" fill="#20151B" stroke="#56404A"/>
+  <rect x="122" y="126" width="956" height="76" rx="20" fill="#2B1E26"/>
+  <rect x="122" y="228" width="560" height="346" rx="28" fill="#2A1D25"/>
+  <rect x="712" y="228" width="366" height="346" rx="28" fill="#2B1E27"/>
+  <circle cx="830" cy="212" r="220" fill="url(#orb)"/>
+  <rect x="758" y="388" width="274" height="138" rx="24" fill="#F8E0C5" fill-opacity="0.14" stroke="#F7DAB9" stroke-opacity="0.42"/>
+  <rect x="160" y="276" width="440" height="22" rx="8" fill="#4A343C"/>
+  <rect x="160" y="314" width="360" height="18" rx="8" fill="#41303A"/>
+  <rect x="160" y="346" width="390" height="18" rx="8" fill="#41303A"/>
+  <rect x="160" y="378" width="320" height="18" rx="8" fill="#41303A"/>
+</svg>

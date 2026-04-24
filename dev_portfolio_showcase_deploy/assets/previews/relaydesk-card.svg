@@ -1,0 +1,20 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13213A"/>
+      <stop offset="1" stop-color="#0F2940"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <rect x="70" y="74" width="1060" height="572" rx="30" fill="#12253E" stroke="#3A5B7F"/>
+  <rect x="108" y="114" width="984" height="92" rx="20" fill="#17304D"/>
+  <rect x="108" y="234" width="620" height="372" rx="24" fill="#17304D" stroke="#3F6185"/>
+  <rect x="754" y="234" width="338" height="174" rx="24" fill="#17304D" stroke="#3F6185"/>
+  <rect x="754" y="432" width="338" height="174" rx="24" fill="#17304D" stroke="#3F6185"/>
+  <rect x="144" y="286" width="548" height="70" rx="16" fill="#1E3B5C"/>
+  <rect x="144" y="374" width="548" height="70" rx="16" fill="#1E3B5C"/>
+  <rect x="144" y="462" width="548" height="70" rx="16" fill="#1E3B5C"/>
+  <rect x="560" y="304" width="98" height="34" rx="10" fill="#82B7FF" fill-opacity="0.45"/>
+  <rect x="560" y="392" width="98" height="34" rx="10" fill="#82B7FF" fill-opacity="0.45"/>
+  <rect x="560" y="480" width="98" height="34" rx="10" fill="#82B7FF" fill-opacity="0.45"/>
+</svg>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignalBoard Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand" href="../../index.html">Илья</a>
+        <a class="back-link" href="../../index.html">← Назад на главную</a>
+        <nav>
+          <a class="active" href="#overview">Обзор</a>
+          <a href="#pipelines">Воронки</a>
+          <a href="#alerts">Алерты</a>
+          <a href="#operators">Операторы</a>
+          <a href="#exports">Экспорт</a>
+        </nav>
+      </aside>
+
+      <section class="dashboard">
+        <header class="header" id="overview">
+          <div>
+            <span class="eyebrow">Внутренний сервис аналитики</span>
+            <h1>SignalBoard</h1>
+            <p>Операционный дашборд для маркетинговых кампаний, бот-сценариев и команд обработки лидов.</p>
+          </div>
+          <div class="header-badge">
+            <strong>98.4%</strong>
+            <span>здоровье системы</span>
+          </div>
+        </header>
+
+        <div class="stats-row">
+          <article class="stat-card">
+            <span>Отслеживаемая выручка</span>
+            <strong>$84.3k</strong>
+            <p>за последние 30 дней</p>
+          </article>
+          <article class="stat-card">
+            <span>SLA ответа по лидам</span>
+            <strong>03:18</strong>
+            <p>медианное время оператора</p>
+          </article>
+          <article class="stat-card">
+            <span>Уровень алертов</span>
+            <strong>Низкий</strong>
+            <p>2 предупреждения открыто</p>
+          </article>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel chart-panel" id="pipelines">
+            <div class="panel-head">
+              <div>
+                <span class="eyebrow">Скорость конверсии</span>
+                <h2>Путь от входящего трафика до квалификации</h2>
+              </div>
+              <button id="toggle-view" type="button">Сменить вид</button>
+            </div>
+            <div class="chart is-refreshing" data-mode="weekly">
+              <svg class="chart-overlay" viewBox="0 0 700 220" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="chart-line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#7d8eff" />
+                    <stop offset="55%" stop-color="#51e5c1" />
+                    <stop offset="100%" stop-color="#8cf4d7" />
+                  </linearGradient>
+                  <linearGradient id="chart-area-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(125, 142, 255, 0.44)" />
+                    <stop offset="100%" stop-color="rgba(81, 229, 193, 0.03)" />
+                  </linearGradient>
+                </defs>
+                <path class="chart-area" d=""></path>
+                <path class="chart-line" d=""></path>
+                <g class="chart-points"></g>
+              </svg>
+              <div class="chart-bars">
+                <div class="bar"><span>Пн</span><i></i></div>
+                <div class="bar"><span>Вт</span><i></i></div>
+                <div class="bar"><span>Ср</span><i></i></div>
+                <div class="bar"><span>Чт</span><i></i></div>
+                <div class="bar"><span>Пт</span><i></i></div>
+                <div class="bar"><span>Сб</span><i></i></div>
+                <div class="bar"><span>Вс</span><i></i></div>
+              </div>
+            </div>
+            <div class="chart-meta">
+              <strong id="chart-average">Средняя квалификация: 61%</strong>
+              <span id="chart-updated">Данные обновлены 2 минуты назад</span>
+            </div>
+          </article>
+
+          <article class="panel" id="operators">
+            <span class="eyebrow">Нагрузка операторов</span>
+            <h2>Текущее распределение потока</h2>
+            <ul class="list">
+              <li><span>Aisha K.</span><strong>12 активных</strong></li>
+              <li><span>Roman D.</span><strong>08 активных</strong></li>
+              <li><span>Nikita P.</span><strong>05 активных</strong></li>
+              <li><span>Overflow bot</span><strong>11 обработано автоматически</strong></li>
+            </ul>
+          </article>
+
+          <article class="panel wide" id="alerts">
+            <span class="eyebrow">Лента алертов</span>
+            <h2>Операционные сигналы</h2>
+            <div class="alerts">
+              <div>
+                <strong>Скачок трафика в кампании N-14</strong>
+                <p>Поток лидов на 32% выше базовой линии. Подключена автоматическая разгрузка.</p>
+              </div>
+              <div>
+                <strong>Обнаружена задержка синхронизации с CRM</strong>
+                <p>Последний пакет выгрузки прошёл с лагом 6 минут. Рекомендуется повтор.</p>
+              </div>
+              <div>
+                <strong>Падение завершения квалификации</strong>
+                <p>Ветка сообщений B просела после обновления креативов.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel" id="exports">
+            <span class="eyebrow">Экспорт и отчёты</span>
+            <h2>Быстрая выгрузка для команды и клиентов</h2>
+            <p>
+              Формируй ежедневные и недельные отчёты в CSV/PDF, отправляй
+              срезы по воронке и SLA руководителю или клиенту в один клик.
+            </p>
+            <ul class="list">
+              <li><span>CSV отчёт по лидам</span><strong>Готов</strong></li>
+              <li><span>PDF отчёт по SLA</span><strong>Готов</strong></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,269 @@
+:root {
+  --bg: #071017;
+  --panel: rgba(10, 21, 31, 0.82);
+  --line: rgba(122, 215, 184, 0.16);
+  --text: #f5fbfa;
+  --muted: #9eb8b1;
+  --accent: #78f2c4;
+  --accent-dark: #0e2f28;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(120, 242, 196, 0.18), transparent 28%),
+    linear-gradient(180deg, #071017 0%, #08131d 56%, #050a11 100%);
+}
+
+.layout {
+  width: min(1140px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 42px 0 56px;
+}
+
+.hero,
+.stats,
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.hero {
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.copy h1,
+.card h2,
+.narrative h2,
+.button,
+.eyebrow {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.copy h1 {
+  margin: 12px 0;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 0.95;
+}
+
+.copy p,
+.narrative p {
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 60ch;
+}
+
+.back-link,
+.eyebrow {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+}
+
+.back-link {
+  color: #d8f7ed;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: var(--accent);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.button {
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--accent), #4be6ab);
+  color: #0a1e18;
+}
+
+.ghost {
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.mockup,
+.card,
+.stats article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+}
+
+.mockup {
+  padding: 24px;
+}
+
+.phone {
+  width: min(310px, 100%);
+  margin: 0 auto;
+  padding: 16px 16px 22px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #13222d, #0a1117 72%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phone-top {
+  width: 90px;
+  height: 8px;
+  margin: 0 auto 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.chat {
+  display: grid;
+  gap: 10px;
+}
+
+.bubble,
+.choice-row span {
+  border-radius: 18px;
+  padding: 12px 14px;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.bubble.bot {
+  background: rgba(120, 242, 196, 0.12);
+  color: #e5fff5;
+}
+
+.bubble.user {
+  background: rgba(255, 255, 255, 0.06);
+  margin-left: auto;
+  max-width: 88%;
+}
+
+.choice-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.choice-row span {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 18px 0;
+}
+
+.stats article,
+.card {
+  padding: 24px;
+}
+
+.stats strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.stats span,
+.card p,
+.queue-list span {
+  color: var(--muted);
+}
+
+.grid {
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+}
+
+.wide {
+  grid-column: span 1;
+}
+
+.steps {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.steps div,
+.queue-list li,
+.tag-grid span {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+}
+
+.steps div {
+  padding: 16px;
+}
+
+.steps strong {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.queue-list {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.queue-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.queue-list strong {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag-grid span {
+  padding: 10px 12px;
+}
+
+.narrative {
+  margin-top: 18px;
+}
+
+@media (max-width: 920px) {
+  .hero,
+  .stats,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
